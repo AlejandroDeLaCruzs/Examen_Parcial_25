@@ -118,8 +118,8 @@ app.listen(PORT, () => {
 
 const testApi = async () => {
     setTimeout(() => {
-        console.log("Han pasado 2 segundos");
-    }, 2000);
+        console.log("Han pasado 1 segundos");
+    }, 1000);
 
     await axios.
         get("http://localhost:3000/ld")
