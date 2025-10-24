@@ -93,7 +93,7 @@ app.delete("/ld/:id", (req: Request, res: Response) => {
     if (index === -1) {
         return res.status(404).send({ error: " Disco no encontrado" });
     }
-    discos = discos.filter((disco) => disco.id != id)
+    discos = discos.filter((disco) => disco.id !== id)
 
     res.status(202).send({ message: "Disco eliminado correctamente" });
 
